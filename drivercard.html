@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootsrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="drivercard.css">
+    <title>Drivers card</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="inputs">
+        <h4>Please fill the form:</h4>
+        <div class="finput">
+            <label>First name:</label>
+            <input type="text" id="fname" placeholder="First name">
+            <label>Middle name:</label>
+            <input type="text" id="mname" placeholder="Middle name">
+            <label>Last name:</label>
+            <input type="text" id="lname" placeholder="Last name">
+            <label>Local Govt.:</label>
+            <input type="text" id="lgov" placeholder="Local Govt.">
+            <label>ID NO:</label>
+            <input type="text" id="idno" placeholder="ISY / 001">
+            <label>Date Issued:</label>
+            <input type="date" id="dateis">
+            <!-- <label id="upload">Upload Image</label><br> -->
+            <input type="file"  id="imagefile" accept="image/*" onchange="loadImage(event)">
+            <p class="inputp">The image should be passport photograph</p>
+            
+        </div>
+        <button id="preview" onclick="preview()" >Preview</button>
+    </div>
+
+
+    <div class="body">
+        <div class="first">
+            <div class="line">
+                <div class="fline"> </div>
+                <div class="sline"> </div>
+            </div>
+            <div class="text">RIDER'S CARD</div>
+            <div class="line2">
+                <div class="fline2"> </div>
+                <div class="sline2"> </div>
+            </div>
+        </div>
+
+        <!-- second part -->
+        <div class="second">
+            <div class="head">
+                <img src="download.jfif" class="image">
+                <p class="thead">COMMERCIAL MOTORCYCLE RIDERS <br>IDENTIFICATION SCHEME OGUN STATE<br><b class="b">[COMORIS]</b></p>
+            </div>
+
+            <div class="third">
+                <div class="detail">
+                    <p class="name" id="cardname"></p>
+                    <p class="local" id="cardgov"></p>
+                    <div class="idiv">
+                        <p class="tid">ID NO:</p>
+                        <p class="id" id="cardid"></p>
+                    </div>
+                    <div class="idate">
+                        <p class="tdate">Date Issued:</p>
+                        <p class="date" id="carddate"></p>
+                    </div>
+                </div>
+                <!-- <div class="imgsec"> -->
+                <img src="" alt="USER PASSPORT" class="userimg" id="userimgg">
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<script src="drivercard.js"></script>
+</body>
+</html>
